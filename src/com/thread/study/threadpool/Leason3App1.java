@@ -12,6 +12,7 @@ public class Leason3App1 {
             executor.submit(new Processor(i));
         }
 
+        //shutdown executor after all threads finished running
         executor.shutdown();
 
         System.out.println("All task submitted.");

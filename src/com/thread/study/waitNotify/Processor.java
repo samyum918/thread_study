@@ -7,7 +7,7 @@ public class Processor {
         //synchronize using the Processor lock
         synchronized (this) {
             System.out.println("Producer thread running...");
-            //pasue the thread
+            //pause the thread
             wait();
             System.out.println("Resumed.");
         }
@@ -23,6 +23,7 @@ public class Processor {
             System.out.println("Return key pressed.");
             //resume the consumer thread, if the lock is free
             notify();
+            //wait 5s then release the lcok
             Thread.sleep(5000);
         }
     }
