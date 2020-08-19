@@ -5,6 +5,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 //Semaphore can set number of permit to allow access of certain resources
+//(e.g. to control the number of threads accessing)
 //Acquire method: -1 permit
 //Release method: +1 permit
 public class Leason8App1 {
